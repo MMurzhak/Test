@@ -4,12 +4,12 @@
 //a = -9 b = -3 -> max = -3
 
 Console.Write("Введите целое число: ");
-string userInputA = Console.ReadLine() ?? "";
-int numberA = int.Parse(userInputA);
+
+int numberA = int.Parse(Console.ReadLine() ?? "");
 
 Console.Write("Введите целое число: ");
-string userInputB = Console.ReadLine() ?? "";
-int numberB = int.Parse(userInputB);
+
+int numberB = int.Parse(Console.ReadLine() ?? "");
 
 if (numberA > numberB) Console.Write($"{numberA} большее число");
-    else Console.Write($"{numberB} большее число");
+    else Console.WriteLine($"{numberB} большее число");
