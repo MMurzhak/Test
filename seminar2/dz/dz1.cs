@@ -3,7 +3,11 @@
 782 -> 8
 918 -> 1*/
 Console.Clear();
-Console.Write("Введите первое число: ");
+Console.Write("Введите трехзначное число число: ");
 int number = int.Parse(Console.ReadLine());
-int result = number /10 %10;
+int result = 0;
+
+    if ((number > 100) && (number <1000)) result = number /10 %10;
+        else Console.WriteLine("Не корректное число");
+
 Console.WriteLine("Вторая цифра числа " + result);
