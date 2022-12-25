@@ -4,14 +4,12 @@
 32679 -> 6
 */
 Console.Clear();
-/*Console.Write("Введите первое число: ");
-int number = int.Parse(Console.ReadLine());
-if (number < 100) Console.WriteLine("Третьей цифры нет");*/
+
 int number;
 int result = 0;
 while(true)
 {
-    Console.Write("Введите первое число:");
+    Console.Write("Введите число:");
     if(int.TryParse(Console.ReadLine(), out number))
     break;
     Console.WriteLine("error");
