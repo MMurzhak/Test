@@ -4,16 +4,16 @@
 
 Console.Clear();
 
-int[] array = GetRandomArray(10, 100, 1000);
-int maxDig = maxDigArr(array);
-int minDig = minDigArr(array);
+double[] array = GetRandomArray(10, 100, 1000);
+double maxDig = maxDigArr(array);
+double minDig = minDigArr(array);
 
 Console.WriteLine($"[{String.Join(",", array)}]");
 Console.WriteLine($"{maxDig} - {minDig} -> {maxDig - minDig}");
 
-int[] GetRandomArray(int size, int minValue, int maxValue)
+double[] GetRandomArray(int size, int minValue, int maxValue)
 {
-    int[] result = new int[size];
+    double[] result = new double[size];
     var rnd = new Random();
     for(int i =0; i < size; i++)
     {
@@ -22,9 +22,9 @@ int[] GetRandomArray(int size, int minValue, int maxValue)
     return result;
 }
 
-int maxDigArr(int[] arr)
+double maxDigArr(double[] arr)
 {
-    int max = arr[0];
+    double max = arr[0];
     for(int i = 0; i < arr.Length; i ++)
     {
         if(arr[i] > max) max = arr[i];
@@ -32,9 +32,9 @@ int maxDigArr(int[] arr)
     return max;
 }
 
-int minDigArr(int[] arr)
+double minDigArr(double[] arr)
 {
-    int min = arr[0];
+    double min = arr[0];
     for(int i = 0; i < arr.Length; i ++)
     {
         if(arr[i] < min) min = arr[i];
